@@ -1,0 +1,221 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+  background-image:url("https://cdn.pixabay.com/photo/2021/06/02/18/04/education-6305113_1280.jpg");
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 400px;
+  width: 400px;
+  background-color: white;
+  border-radius: 15px;
+  /* box-shadow: 2px 2px 10px 1px rgb(102, 3, 102); */
+  box-shadow: 4px 4px 10px 5px #6A6F4E;  
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+  background-color: black;
+  margin-top: 1rem;
+  
+}
+/* .heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;  
+  text-transform: uppercase;
+  background-color: #6A6F4E;
+} */
+
+.title-Quiz{
+  background-color: #6A6F4E;
+  color: black;
+  margin-bottom: 1rem;
+  font-size: larger;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 5px;
+  padding-top: 0rem;
+  display: block;
+  text-align: center;
+  box-shadow: 0px 0px 10px 5px black;
+}
+
+.question{
+  margin:8px;
+  border-radius: 5px;
+  padding:5px;
+  font-size: large;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  min-width: 100%;
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color:#6A6F4E;
+}
+
+#question-number{
+  margin-right: 5px;
+}
+
+.option-container{
+  display: flex;
+  flex-direction: column;
+  margin:6px 4px;    
+  width: 100%;
+  padding: 10px;
+}
+/* .option-container input{
+  visibility: hidden;    
+} */
+.option-btn{
+  padding: 5px;
+  border-radius: 3px;
+  border:none;
+  outline: none;
+  transition: 0.3s;
+  margin: 5px;
+  min-height: 30px;
+  color: #6A6F4E;
+  background-color: black;
+  width: 100%;
+  box-shadow: 0px 0px 10px 1px #6A6F4E;
+  font-size :medium;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.checked{
+  background-color: rgb(126, 122, 146);
+  color: black;
+  box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
+}
+.option-btn:hover{
+  background-color:#6A6F4E;
+  color:black;
+}
+#next-button{
+  padding:10px;
+  background-color: black;
+  color:#6A6F4E;
+  border-color: #6A6F4E;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 5px #6A6F4E;
+  font-size: larger;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width:200px;
+  position: absolute;
+  bottom: 2rem;
+}
+#next-button:active{
+  box-shadow:none;    
+}
+
+.result-page{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  margin-top: 3rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+#lbl-score{
+  background-color: #6A6F4E;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px #6A6F4E;
+  font-size: larger;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width:200px;
+  text-align: center;
+}
+
+#lbl-final-score{
+  background-color: #6A6F4E;
+  margin-top: 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px #6A6F4E;
+  font-size: larger;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width:200px;
+  text-align: center;
+}
+
+.div-labelScores{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.div-bottom{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  min-height: 100px;
+  margin-top: 5rem;
+  /* bottom: 0rem; */
+  vertical-align: bottom;
+}
+
+#tryagain-button{
+  padding:10px;
+  background-color: black;
+  color:#6A6F4E;
+  border-color: #6A6F4E;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 5px #6A6F4E;
+  font-size: larger;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width:200px;
+  top:1rem;
+}
+
+#review-button{
+  margin-top: 1rem;
+  padding:10px;
+  background-color: black;
+  color:#6A6F4E;
+  border-color: #6A6F4E;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 5px #6A6F4E;
+  font-size: larger;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width:200px;
+}
+
+.review-page{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  margin-top: 3rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  height: 100vh;
+  width: 100vh;
+}
+
